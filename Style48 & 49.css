@@ -1,0 +1,179 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: #1b1f23;
+}
+.container{
+    width: 22rem; height: 33rem;
+    border-radius: 47px;
+    background: linear-gradient(145deg, #181c20, #1d2125);
+    box-shadow:  10px 10px 27px #171a1e,
+             -10px -10px 27px #1f2428;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile{
+    background-image: url("2020-07-16.jpg");
+    width: 8.126rem;
+    height: 8.126rem;
+    border: 5px solid orangered;
+    border-radius: 50%;
+    background-size: cover;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f8f8f8;
+    margin-top: 20px;    
+}
+.bio{
+    color: #636363;
+}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.value{
+    color: #f8f8f8;
+    font-weight: bold;
+}
+.title{
+    color: #636363;
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 20px 0;
+
+}
+.follow{
+    grid-column: 1/5;
+    width: 250px;
+    height: 50px;
+    border-radius: 47px;
+    background: linear-gradient(145deg, #181c20, #1d2125);
+    box-shadow:  10px 10px 27px #171a1e,
+             -10px -10px 27px #1f2428;
+    cursor: pointer;
+    font-size: 18px;
+    color: #636363;
+
+}
+.follow:hover{
+    background: #f8f8f8;
+    box-shadow:  10px 10px 27px #171a1e,
+    -10px -10px 27px #1f2428;
+    color: orangered;
+
+}
+
+label{
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    width: 60px; height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #181c20, #1d2125);
+    box-shadow:  10px 10px 27px #171a1e,
+             -10px -10px 27px #1f2428;
+    cursor: pointer;
+}
+
+label:hover{
+    background: #f8f8f8;
+    box-shadow:  10px 10px 27px #171a1e,
+    -10px -10px 27px #1f2428;
+    color: orangered;
+}
+
+input{
+    display: none;
+}
+
+.envelope .info .phone{
+    transition: width,height .2s,.2s;
+}
+
+#envelope:checked ~ .container .envelope{
+    position: absolute;
+    width: 100%; height: 35%;
+    text-align:left;
+    overflow: hidden;
+    top: 65%;
+    background: #f8f8f8;
+    color: orangered;
+
+
+}
+#envelope:checked ~ .container .envelope::after{
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi neque ad, optio hic laboriosam quae numquam at iste quasi";
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #1f2428;
+}
+#info:checked ~ .container .info{
+    position: absolute;
+    width: 100%; height: 35%;
+    text-align:left;
+    overflow: hidden;
+    top: 65%;
+    background: #f8f8f8;
+    color: orangered;
+
+}
+#info:checked ~ .container .info::after{
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi neque ad, optio hic laboriosam quae numquam at iste quasi";
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #1f2428;
+}
+#phone:checked ~ .container .phone{
+    position: absolute;
+    width: 100%; height: 35%;
+    text-align:left;
+    overflow: hidden;
+    top: 65%;
+    background: #f8f8f8;
+    color: orangered;
+
+}
+#phone:checked ~ .container .phone::after{
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi neque ad, optio hic laboriosam quae numquam at iste quasi";
+    font-size: 18px;
+    color: #1f2428;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+}
